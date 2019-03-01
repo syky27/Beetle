@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Beetle_Example' do
+  pod 'Beetle', :path => '../'
+
+  target 'Beetle_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
