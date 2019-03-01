@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Beetle (0.1.0):
+    - Alamofire (~> 4.8.1)
+
+DEPENDENCIES:
+  - Beetle (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  Beetle:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Beetle: 250d2e08ad20d89f0c5c2e3576def599b818df47
+
+PODFILE CHECKSUM: 094b52c44b1d40742b0fe7df8c5eb1eff1c269ca
+
+COCOAPODS: 1.5.3

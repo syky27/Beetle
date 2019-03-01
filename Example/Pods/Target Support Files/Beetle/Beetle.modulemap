@@ -1,0 +1,6 @@
+framework module Beetle {
+  umbrella header "Beetle-umbrella.h"
+
+  export *
+  module * { export * }
+}

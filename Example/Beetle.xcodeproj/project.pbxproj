@@ -29,10 +29,10 @@
 
 /* Begin PBXFileReference section */
 		0955103431FA8B781F16E236 /* Pods-Beetle_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beetle_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beetle_Example/Pods-Beetle_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0D66750F7347EBA37EDB3559 /* Beetle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Beetle.podspec; path = ../Beetle.podspec; sourceTree = "<group>"; };
+		0D66750F7347EBA37EDB3559 /* Beetle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Beetle.podspec; path = ../Beetle.podspec; sourceTree = "<group>"; };
 		1646CD8AAD169500B636F6B1 /* Pods_Beetle_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beetle_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3572E65419D46AEAE1BFB49C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		41D473FD342DE0A29F84E4F8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3572E65419D46AEAE1BFB49C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		41D473FD342DE0A29F84E4F8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Beetle_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beetle_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -212,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = CDMJRT8WJB;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = CDMJRT8WJB;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -292,12 +294,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Beetle_Example/Pods-Beetle_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Beetle/Beetle.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Beetle.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,7 +485,9 @@
 			baseConfigurationReference = 9499D252A19EBB378027A381 /* Pods-Beetle_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CDMJRT8WJB;
 				INFOPLIST_FILE = Beetle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -496,7 +502,9 @@
 			baseConfigurationReference = 0955103431FA8B781F16E236 /* Pods-Beetle_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CDMJRT8WJB;
 				INFOPLIST_FILE = Beetle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -510,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E267BCC48D2A51940BA9A856 /* Pods-Beetle_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = CDMJRT8WJB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -532,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A44D9EC57E5176275DCAC1A2 /* Pods-Beetle_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = CDMJRT8WJB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -1,8 +1,7 @@
 use_frameworks!
-
+platform :ios, '12.0'
 target 'Beetle_Example' do
   pod 'Beetle', :path => '../'
-
   target 'Beetle_Tests' do
     inherit! :search_paths
 
