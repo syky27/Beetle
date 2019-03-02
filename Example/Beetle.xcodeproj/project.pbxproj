@@ -171,6 +171,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				8CC5722201565FA944BC8A08 /* [CP] Embed Pods Frameworks */,
+				3579FCA82229EE70006F696D /* Swiftformat */,
 			);
 			buildRules = (
 			);
@@ -263,6 +264,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3579FCA82229EE70006F696D /* Swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftformat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat ../Beetle/Classes --swiftversion 4.2\nelse\necho \"warning: Swiftformat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
 		8358CEB632E6AA3291561B37 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
